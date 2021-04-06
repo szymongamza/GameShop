@@ -98,5 +98,8 @@
   <ItemGroup>
     <Resource Include="Images\pad.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Screenshot Preview\MainWindow.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
