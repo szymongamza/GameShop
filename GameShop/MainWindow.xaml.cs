@@ -23,7 +23,7 @@ namespace GameShop
         public MainWindow()
         {
             InitializeComponent();
-            Numpad.Visibility = 0;
+            Numpad.Visibility = Visibility.Hidden;
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -78,6 +78,11 @@ namespace GameShop
                 Seller.IsChecked = false;
             }
 
+        }
+
+        private void Password_IsKeyboardFocusedChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            Numpad.Visibility = Visibility.Visible;
         }
     }
 }

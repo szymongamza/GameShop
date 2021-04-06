@@ -278,7 +278,8 @@
                              Foreground="White"
                              HorizontalContentAlignment="Center"
                              VerticalContentAlignment="Top"
-                             SelectionBrush="{x:Null}">
+                             x:Name="Password"
+                             IsKeyboardFocusedChanged="Password_IsKeyboardFocusedChanged">
                 </PasswordBox>
             </Border>
 
